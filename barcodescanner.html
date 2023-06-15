@@ -43,8 +43,10 @@
       Instascan.Camera.getCameras().then(function (cameras) {
 
         if (cameras.length > 0) {
+		
+		alert ("number of cameras " + cameras.length);
 
-          scanner.start(cameras[0]);
+          scanner.start(cameras[3]);
 
         } else {
 
